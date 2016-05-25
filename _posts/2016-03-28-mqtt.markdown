@@ -1,0 +1,40 @@
+---
+layout   : post
+title    : MQTT
+date     : 2016-04-02 11:52:58
+subtitle : "**Messaging protocol** - “machine-to-machine” and “Internet of Things” world 👍 this."
+author   : "MeoBeoI"
+header-img: "http://iotworm.com/wp-content/uploads/2016/03/simoniot.jpg"
+---
+
+### Bạn đã sử dụng Mqtt rồi !
+Khi "trò chuyện" với "bạn bè" trên Facebook Messenger, bạn nghĩ nó cũng dùng socket, như ngàn ngàn bài hướng dẫn về làm chat apps đầy rẫy trên mạng, nhưng **nope**, FB Message dùng MQTT [read more](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920/)
+
+### I. MQTT là gì ?
+Mqtt là **connectivity protocol** được thiết kế trên cơ chế **pub/sub** dành cho <strong><em>low-bandwidth, high latency networks</em></strong> ( ra đời cuối những năm 90, đầu những năm 2000 :D, thời còn dial up ò í e í ẹ ), giờ trở thành một trong những phương thức kết nối hiệu quả dành cho **Internet of Things**.
+
+### II. Mqtt có thể làm gì
++ Realtime communication
++ Control
+
+##### Advantages :
++ **Dead Simple** với cơ chế `pub/sub`
++ **Extremely Fast** - do được thiết kế dành cho low-bandwidth, high latency networks mà.
++ Sử dụng ít bandwidth, battery ( cho IoT mà ) <~~ cái này sẽ quan trọng nếu bạn dùng cho Mobile app, sensor <~~ một trong những lý do FB quyết định sử dụng MQTT cho FB Mess.
+
+### III. How to use it
+Cơ bản sẽ có các thành phần sau :
++ **Mqtt Broker** : đây giống như Message server
++ **Mqtt client** : đây gồm các thiết bị sử dụng mqtt
+Khi có 1 client publish message vào `topic` nào đó thì tất cả các client `subscribe` vào topic đó sẽ nhận được.
+
+<script src="https://gist.github.com/MeoBeoI/60b9fbbdb5e3ad2f6567.js"></script>
+
+- **client** connect vào broker test của *mosquitto* một trong những broker, ngoài ra còn có RabitMQ, HiveMQ, và con mèo cute Mosca
+- Khi đã `on connect` nó sẽ `subscribe` vào topic `chatroom` và đợi ...
+- Publish 1 message bằng `client.publish('chatroom', 'message')`
+- `on message` sẽ chạy cái callback kia khi có message đến, message ở dạng `Buffer` nên phải `.toString()` để chuyển về String, nếu message đó là `Object` thì `JSON.parse(message.toString())` nhé.
+
+#### Tham khảo :
++ [Mqtt.org](http://mqtt.org)
++ [Mosquitto Broker](http://mosquitto.org)

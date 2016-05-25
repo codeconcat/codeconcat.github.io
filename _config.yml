@@ -1,0 +1,21 @@
+# Site settings
+title: CodeConCat
+header-img: img/home-bg.jpg
+email: trungnm0512@gmail.com
+copyright_name: CodeConCat
+description: " Code like a fuking cat !"
+baseurl: ""
+url: "http://codeconcat.com"
+twitter_username: conmeomauden
+github_username:  MeoBeoI
+facebook_username:  CodeConCat
+email_username:  admin@codeconcat.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
