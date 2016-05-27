@@ -3,7 +3,7 @@ layout: post
 title:  Lời hứa của chàng Javascript
 date:   2016-04-02 11:52:58 +0700
 categories: javascript
-image: http://1.bp.blogspot.com/-j-6Oa_s7FcQ/Vfcs-nw9ebI/AAAAAAAAGd0/fa0C6ycSsbw/s1600/promise.png
+header-img: http://1.bp.blogspot.com/-j-6Oa_s7FcQ/Vfcs-nw9ebI/AAAAAAAAGd0/fa0C6ycSsbw/s1600/promise.png
 excerpt : với một số xử lý theo kiểu <strong>asynchronous</strong>, không xử lý tuần tự, mà sử dụng <strong>callback</strong> một hàm được gọi khi async logic xử lý xong.
 ---
 ### I. Bài toán đi xem film

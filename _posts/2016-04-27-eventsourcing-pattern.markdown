@@ -3,7 +3,7 @@ layout: post
 title:  EventSouring Pattern
 date:   2016-04-27 11:00:00 +0700
 categories: pattern
-image: http://www.influencepublishing.com/wp-content/uploads/2014/05/2c8a2de555ca93e310f677b570632566-636x250.jpg
+header-img: http://www.influencepublishing.com/wp-content/uploads/2014/05/2c8a2de555ca93e310f677b570632566-636x250.jpg
 excerpt : EventSourcing.
 ---
 ### I. ActiveRecord vs EventSourcing

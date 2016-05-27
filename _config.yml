@@ -18,4 +18,7 @@ permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
+disqus: true
+disqus_shortname: codeconcat
+
 gems: [jekyll-paginate, jekyll-feed]

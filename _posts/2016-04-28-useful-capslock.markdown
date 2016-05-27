@@ -3,7 +3,7 @@ layout: post
 title:  A useful CAPSLOCKS
 date:   2016-04-27 11:52:58 +0700
 categories: tips
-image: http://www.howtogeek.com/wp-content/uploads/gg/up/xsshot4d0bb21e1804e.jpg.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.0fRzh_qKvO.jpg
+header-img: http://www.howtogeek.com/wp-content/uploads/gg/up/xsshot4d0bb21e1804e.jpg.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.0fRzh_qKvO.jpg
 ---
 Bọn **Developer** lông hôi thì, mỗi tên lại có **stack** riêng, [Check MeoBeoI stacks](http://stackshare.io/MeoBeoI), khi làm thi thoảng cũng phải switch qua lại giữa các app ( software ... ), **thao tác** của bạn sẽ làm như thế nào ?
 
@@ -13,7 +13,7 @@ Một cô làm việc trên **Windows** :
 + **Pin app** vào <strong>taskbar </strong>rồi bấm <kbd><i class="fa fa-windows" aria-hidden="true"></i></kbd> + <kbd>1</kbd> <kbd>2</kbd><kbd>3</kbd> hay <kbd>Alt</kbd> + <kbd>Tab</kbd>
 
 Một chú thao tác trên **MAC** :
-+ <kbd>Cmd</kbd><kbd>Space</kbd> open **Spotlight** => **app name** => <kbd>enter</kbd>
++ <kbd>Cmd</kbd> <kbd>Space</kbd> open **Spotlight** => **app name** => <kbd>enter</kbd>
 
 Có thằng bạn khoe phím cơ 5 mê, không có nhiều phím, nó bảo
 

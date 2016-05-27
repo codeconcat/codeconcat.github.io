@@ -3,7 +3,7 @@ layout: post
 title:  Microservices - Know the Monolithic 
 date:   2016-05-04 16:52:58 +0700
 categories: architecture
-image: http://ryanjbaxter.com/wp-content/uploads/2015/07/micro-service-architecture.png
+header-img: http://ryanjbaxter.com/wp-content/uploads/2015/07/micro-service-architecture.png
 excerpt : Before Microservices there were Monolithic
 ---
 # Life before Microservices - Monolithic
