@@ -4,7 +4,19 @@ description: "A Clean Blog Theme by Start Bootstrap"
 ---
 
 {% for post in paginator.posts %}
-<div class="post-preview">
+<a href="{{ post.url | prepend: site.baseurl }}" class="a-wrapper"><div class="preview-card">
+  <div class="preview-img">
+    <img src="{{post.header-img}}" alt="" />
+  </div>
+  <div class="preview-title">
+    <span>{{ post.title }}</span>
+  </div>
+  <div class="preview-subtitle">
+    <!-- {{post.subtitle}} -->
+  </div>
+</div>
+</a>
+<!-- <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            {{ post.title }}
         </h2>
@@ -15,7 +27,7 @@ description: "A Clean Blog Theme by Start Bootstrap"
         {% endif %}
     </a>
     <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
+</div> -->
 <hr>
 {% endfor %}
 
