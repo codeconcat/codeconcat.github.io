@@ -18,14 +18,14 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus"
+  provider               : "facebook"
   disqus:
     shortname            : "codeconcat"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                : 267139726966649
+    appid                : # 267139726966649
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 
@@ -68,7 +68,7 @@ author:
   bio              : "I am an amazing person."
   location         : "HubConCat"
   email            : "trungnm0512@gmail.com"
-  uri              : "trung.site"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
