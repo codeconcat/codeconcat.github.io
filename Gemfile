@@ -1,8 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'github-pages'
-  gem "jekyll-paginate"
-  gem "jekyll-feed"
-end
+gem "github-pages"
+# gem "jekyll-archives"
+gem "wdm", "~> 0.1.0" if Gem.win_platform?

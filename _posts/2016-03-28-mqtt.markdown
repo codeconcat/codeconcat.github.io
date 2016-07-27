@@ -1,5 +1,5 @@
 ---
-layout   : post
+layout   : single
 title    : MQTT
 date     : 2016-04-02 11:52:58
 subtitle : "Messaging protocol - “machine-to-machine” and “Internet of Things” world 👍 this."

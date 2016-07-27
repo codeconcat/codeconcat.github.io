@@ -1,10 +1,11 @@
 ---
-layout: post
-title:  Lời hứa của chàng Javascript
-date:   2016-04-02 11:52:58 +0700
-categories: javascript
-header-img: http://1.bp.blogspot.com/-j-6Oa_s7FcQ/Vfcs-nw9ebI/AAAAAAAAGd0/fa0C6ycSsbw/s1600/promise.png
-excerpt : với một số xử lý theo kiểu <strong>asynchronous</strong>, không xử lý tuần tự, mà sử dụng <strong>callback</strong> một hàm được gọi khi async logic xử lý xong.
+layout: single
+title      : Lời hứa của chàng Javascript - P1
+date       : 2016-04-02 11:52:58 +0700
+categories : javascript
+header:
+  overlay_color: "#333"
+excerpt : Promise đối với async process
 ---
 ### I. Bài toán đi xem film
 Một ngày đẹp trời, bạn muốn đi coi film, có nhiều film và nhiều gái nên bạn phải làm 1 service để lấy list film gửi cho list gái rồi nó sẽ cho bạn 1 list gái muốn đi xem nào để lựa ak.

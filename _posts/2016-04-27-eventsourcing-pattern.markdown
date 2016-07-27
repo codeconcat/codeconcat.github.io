@@ -1,9 +1,11 @@
 ---
-layout: post
+layout: single
 title:  EventSouring Pattern
 date:   2016-04-27 11:00:00 +0700
 categories: pattern
-header-img : /img/cbm4.png
+header:
+  overlay_image: /images/cbm4.png
+  overlay_color: "#333"
 excerpt : EventSourcing.
 ---
 ### Lời nói đầu 
