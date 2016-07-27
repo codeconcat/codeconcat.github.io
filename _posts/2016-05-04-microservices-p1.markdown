@@ -4,7 +4,6 @@ title:  Microservices - Know the Monolithic
 date:   2016-05-04 16:52:58 +0700
 categories: architecture
 header:
-  overlay_image: cbm4.png
   overlay_color: "#333"
 excerpt : Before Microservices there were Monolithic
 ---
