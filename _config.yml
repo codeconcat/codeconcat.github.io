@@ -12,8 +12,8 @@ title_separator          : "-"
 name                     : "MeoBeoI"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : ""
-gh_repo                  :
+baseurl                  : "https://codeconcat.com"
+gh_repo                  : "https://github.com/codeconcat/codeconcat.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
