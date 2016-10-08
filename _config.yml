@@ -9,25 +9,43 @@
 locale                   : "en"
 title                    : "CodeConCat"
 title_separator          : "-"
-name                     : "MeoBeoI"
-description              : "An amazing website."
-url                      : "https://codeconcat.com"
-baseurl                  : ""
-gh_repo                  :
+name                     : "TrungNM"
+description              : "Code like a fricking cat."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "codeconcat/codeconcat.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "facebook"
+  provider               : "disqus"
   disqus:
     shortname            : "codeconcat"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                : # 267139726966649
+    appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
 
 # SEO Related
 google_site_verification :
@@ -42,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "hoanhtrang.png"
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -52,30 +70,26 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-universal"
+  provider               : "google"
   google:
     tracking_id          : "UA-71756827-2"
-
-# Google AdSense
-google_ad_client         :
-google_ad_slot           :
 
 
 # Site Author
 author:
-  name             : "MeoBeoI"
-  avatar           : "hoanhtrang.png"
+  name             : "TrungNM"
+  avatar           : "images/hoanhtrang.png"
   bio              : "I am an amazing person."
-  location         : "HubConCat"
-  email            : "trungnm0512@gmail.com"
-  uri              : 
+  location         : "Somewhere"
+  email            :
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "MeoBeoI"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
@@ -83,7 +97,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          :
@@ -100,6 +114,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - vendor
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -147,11 +162,17 @@ kramdown:
   enable_coderay: false
 
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia/Ho_Chi_Minh
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -206,16 +227,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: true
-      share: true
-      related: true
