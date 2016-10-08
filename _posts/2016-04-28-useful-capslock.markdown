@@ -54,6 +54,9 @@ Vẫn còn một số sạn khi sử dụng cách này, nhưng sạn cũng khôn
 
 Đây chỉ áp dụng cho **macOS**, bạn nào dùng **Linux, Window ...** nếu biết cách nào, thì nhanh nhanh comment phía dưới cho mình nào.
 
+### Update macOS Sierra :
+(08/10) macOS mới Karabier, Seil chưa support nên dùng cách này nhé : [Usefull Capslock for macOs](https://github.com/hiro28/useful-capslock)
+
 
 ### Cảm ơn và tham khảo nè:
 
